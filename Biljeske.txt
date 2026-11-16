@@ -97,3 +97,26 @@ Changes not staged for commit:
 
 
 w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+w10@DESKTOP-J8C22VO UCRT64 ~
+$ cd moj_projekt
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git commit -m "Dobro dosli"
+[master (root-commit) 26eab62] Dobro dosli
+ 1 file changed, 99 insertions(+)
+ create mode 100644 Biljeske.txt
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git log
+commit 26eab62dc2d3f159f5e7aa6c8b2d72022a04c5b2 (HEAD -> master)
+Author: Jelena Gelic <jelena.gelicetf@gmail.com>
+Date:   Mon Nov 16 17:16:33 2026 +0100
+
+    Dobro dosli
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+
+
+DA VIDIM STA RADI
+
+
