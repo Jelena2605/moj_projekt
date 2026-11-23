@@ -1,0 +1,117 @@
+w10@DESKTOP-J8C22VO UCRT64 ~
+$ cd moj_projekt
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git switch -c nova_grana
+Switched to a new branch 'nova_grana'
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git add .
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git add .
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git commit -m "Nova grana"
+[nova_grana df29a3f] Nova grana
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git switch master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git switch nova_grana
+Switched to branch 'nova_grana'
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git switch master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git merge nova_grana
+Updating e8746ba..df29a3f
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git add .
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git commit -m "Izmjena"
+[master 605553f] Izmjena
+ 1 file changed, 2 insertions(+)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git switch nova_grana
+Switched to branch 'nova_grana'
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$
+$ git add .
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git add .
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git commit -m "Izmjena dva"
+[nova_grana 3a595a2] Izmjena dva
+ 1 file changed, 3 insertions(+)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (nova_grana)
+$ git switch master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git merge nova_grana
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master|MERGING)
+$ git add README.md
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master|MERGING)
+$ git commit -m " Resen koflikt"
+[master 5fe1251]  Resen koflikt
+ggi
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git branch -d nova_grana
+Deleted branch nova_grana (was 3a595a2).
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$ git push
+Enumerating objects: 18, done.
+Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 1.38 KiB | 78.00 KiB/s, done.
+Total 15 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Jelena2605/moj_projekt.git
+   447d958..5fe1251  master -> master
+
+w10@DESKTOP-J8C22VO UCRT64 ~/moj_projekt (master)
+$
